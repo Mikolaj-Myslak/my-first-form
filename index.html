@@ -53,7 +53,7 @@
                             <input name="skladniki" id="szynka" value="szynka" type="checkbox" >
                             <label for="szynka">Szynka</label>
                         </div>                        
-                        <div class="skladnik">
+                        <div class="flexPart">
                             <input name="skladniki" id="kukurydza" value="kukurydza" type="checkbox" >
                             <label for="kukurydza">Kukurydza</label>
                         </div>
@@ -85,20 +85,31 @@
                     </div>    
                 </section>
                 <section id="adresSection" class="menuSection centerText">
-                    <div>
-                        <label for="dzielnica">Wybierz swoją dzielnicę </label>
-                        <select id="dzielnica" name="dzielnica">
-                            <option value="rataje">Rataje</option>
-                            <option value="winogrady">Winogrady</option>
-                            <option value="jezyce">Jeżyce</option>
-                            <option value="lazarz">Łazarz</option>
-                            <option value="stareMiasto">Stare Miasto</option>
-                        </select>
-                        <div>
-                            <label for="adres">Ulica i nr domu</label>
-                            <input type="text" name="adres" value="">
-                        </div>
+                    <div class="marginB"><label for="dzielnica">Wybierz lub wpisz swoją dzielnicę </label></div>
+                    <input type="text" list="chooseDzielnica" id="dzielnica" name="dzielnica">
+                    <datalist id="chooseDzielnica">
+                        <option value="Rataje"></option>
+                        <option value="Winogrady"></option>
+                        <option value="Jezyce"></option>
+                        <option value="Łazarz"></option>
+                        <option value="Stare Miasto"></option>
+                        <option value="Piątkowo"></option>
+                        <option value="Ogrody"></option>
+                        <option value="Grunwald"></option>
+                        <option value="Dębiec"></option>
+                    </datalist>  
+                    <div>  
+                        <div class="marginB"><label for="adres">Ulica i nr domu</label></div>
+                        <input type="text" name="adres" value="">
                     </div>
+                </section>
+                <section id="commentSection" class="menuSection centerText">
+                    <div class="marginB"><label for="comment">Uwagi do zamówienia wariacie?</label></div>
+                    <textarea id="comment" name="comment" rows="2" cols="20">
+                    </textarea>
+                </section>
+                <section id="submit" class="menuSection centerText">
+                    <input type="submit" value="Zamawiam!">
                 </section>
             </form>
         </div>
