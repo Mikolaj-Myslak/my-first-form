@@ -46,8 +46,13 @@ body{
 }
 
 .menuSection{
-    margin: 5px;
+    margin: 0 0 20px 0;
 }
 .centerText{
     text-align: center;
+}
+
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
 }

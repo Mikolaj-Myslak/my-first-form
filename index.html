@@ -21,7 +21,7 @@
                 Stwórz swoją pizzę sam!
             </div>
             <form id="pizzaForm" action="./clientOrders.html" method="POST">
-                <section class="menuSection">
+                <section id="ciastoSection" class="menuSection">
                     <div class="centerText">Ciasto</div>
                     <input name="ciasto" id="ultra-cienkie" value="ultra-cienkie" type="radio" >
                     <label for="ultra-cienkie">Ultra cienkie</label>
@@ -32,25 +32,34 @@
                     <input name="ciasto" id="grube" value="grube" type="radio" >
                     <label for="grube">Grube</label>
                 </section>
-                <section class="menuSection">
+                <section id="skladnikiSection" class="menuSection">
                     <div class="centerText">Składniki</div>
-                    <input name="skladniki" id="salami" value="salami" type="checkbox" >
-                    <label for="salami">Salami</label>
-                    </br>
-                    <input name="skladniki" id="szynka" value="szynka" type="checkbox" >
-                    <label for="szynka">Szynka</label>
-                    </br>
-                    <input name="skladniki" id="kukurydza" value="kukurydza" type="checkbox" >
-                    <label for="kukurydza">Kukurydza</label>
-                    </br>
-                    <input name="skladniki" id="papryka" value="papryka" type="checkbox" >
-                    <label for="papryka">Papryka</label>
-                    
-                </section>
-                <section class="menuSection">
-                    <div class="centerText">
-                        <label for="adres">Adres dostawy</label>
+                    <div class=".flexWrap">
+                        <input name="skladniki" id="salami" value="salami" type="checkbox" >
+                        <label for="salami">Salami</label>
                         </br>
+                        <input name="skladniki" id="szynka" value="szynka" type="checkbox" >
+                        <label for="szynka">Szynka</label>
+                        </br>
+                        <input name="skladniki" id="kukurydza" value="kukurydza" type="checkbox" >
+                        <label for="kukurydza">Kukurydza</label>
+                        </br>
+                        <input name="skladniki" id="papryka" value="papryka" type="checkbox" >
+                        <label for="papryka">Papryka</label>   
+                    </div>    
+                </section>
+                <section id="adresSection" class="menuSection">
+                    <div class="centerText">
+                        <label for="dzielnica">Wybierz swoją dzielnicę </label>
+                        <select id="dzielnica" name="dzielnica">
+                            <option value="rataje">Rataje</option>
+                            <option value="winogrady">Winogrady</option>
+                            <option value="jezyce">Jeżyce</option>
+                            <option value="lazarz">Łazarz</option>
+                            <option value="stareMiasto">Stare Miasto</option>
+                        </select>
+                        </br>
+                        <label for="adres">Ulica i nr domu</label>
                         <input type="text" name="adres" value="">
                     </div>
                 </section>
