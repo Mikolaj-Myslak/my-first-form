@@ -23,33 +23,69 @@
             <form id="pizzaForm" action="./clientOrders.html" method="POST">
                 <section id="ciastoSection" class="menuSection">
                     <div class="centerText">Ciasto</div>
-                    <input name="ciasto" id="ultra-cienkie" value="ultra-cienkie" type="radio" >
-                    <label for="ultra-cienkie">Ultra cienkie</label>
-                    </br>
-                    <input name="ciasto" id="cienkie" value="cienkie" type="radio" >
-                    <label for="cienkie">Cienkie</label>
-                    </br>
-                    <input name="ciasto" id="grube" value="grube" type="radio" >
-                    <label for="grube">Grube</label>
+                    <div class="flexWrap">
+                        <div class="flexPart">
+                            <input name="ciasto" id="ultra-cienkie" value="ultra-cienkie" type="radio" >
+                            <label for="ultra-cienkie">Ultra cienkie</label>
+                        </div>
+                        <div class="flexPart">
+                            <input name="ciasto" id="cienkie" value="cienkie" type="radio" >
+                            <label for="cienkie">Cienkie</label>
+                        </div>
+                        <div class="flexPart">
+                            <input name="ciasto" id="grube" value="grube" type="radio" >
+                            <label for="grube">Grube</label>
+                        </div>
+                        <div class="flexPart">
+                            <input name="ciasto" id="cheeseEdge" value="cheeseEdge" type="radio" >
+                            <label for="cheeseEdge">Grube 2x dodatki</label>
+                        </div>
+                    </div>
                 </section>
                 <section id="skladnikiSection" class="menuSection">
                     <div class="centerText">Składniki</div>
-                    <div class=".flexWrap">
-                        <input name="skladniki" id="salami" value="salami" type="checkbox" >
-                        <label for="salami">Salami</label>
-                        </br>
-                        <input name="skladniki" id="szynka" value="szynka" type="checkbox" >
-                        <label for="szynka">Szynka</label>
-                        </br>
-                        <input name="skladniki" id="kukurydza" value="kukurydza" type="checkbox" >
-                        <label for="kukurydza">Kukurydza</label>
-                        </br>
-                        <input name="skladniki" id="papryka" value="papryka" type="checkbox" >
-                        <label for="papryka">Papryka</label>   
+                    <div class="flexWrap">
+                        <div class="flexPart">
+                            <input name="skladniki" id="salami" value="salami" type="checkbox" >
+                            <label for="salami">Salami</label>
+                        </div>                     
+                        <div class="flexPart">
+                            <input name="skladniki" id="szynka" value="szynka" type="checkbox" >
+                            <label for="szynka">Szynka</label>
+                        </div>                        
+                        <div class="skladnik">
+                            <input name="skladniki" id="kukurydza" value="kukurydza" type="checkbox" >
+                            <label for="kukurydza">Kukurydza</label>
+                        </div>
+                        <div class="flexPart">
+                            <input name="skladniki" id="papryka" value="papryka" type="checkbox" >
+                            <label for="papryka">Papryka</label>   
+                        </div>
+
+                        <div class="flexPart">
+                            <input name="skladniki" id="brokuly" value="brokuly" type="checkbox" >
+                            <label for="brokuly">Brokuły</label>   
+                        </div>
+                        <div class="flexPart">
+                            <input name="skladniki" id="pieczarki" value="pieczarki" type="checkbox" >
+                            <label for="pieczarki">Pieczarki</label>   
+                        </div>
+                        <div class="flexPart">
+                            <input name="skladniki" id="pomidor" value="pomidor" type="checkbox" >
+                            <label for="pomidor">Pomidor</label>   
+                        </div>
+                        <div class="flexPart">
+                            <input name="skladniki" id="rukola" value="rukola" type="checkbox" >
+                            <label for="rukola">Rukola</label>   
+                        </div>
+                        <div class="flexPart">
+                            <input name="skladniki" id="feta" value="feta" type="checkbox" >
+                            <label for="feta">Feta</label>   
+                        </div>
                     </div>    
                 </section>
-                <section id="adresSection" class="menuSection">
-                    <div class="centerText">
+                <section id="adresSection" class="menuSection centerText">
+                    <div>
                         <label for="dzielnica">Wybierz swoją dzielnicę </label>
                         <select id="dzielnica" name="dzielnica">
                             <option value="rataje">Rataje</option>
@@ -58,9 +94,10 @@
                             <option value="lazarz">Łazarz</option>
                             <option value="stareMiasto">Stare Miasto</option>
                         </select>
-                        </br>
-                        <label for="adres">Ulica i nr domu</label>
-                        <input type="text" name="adres" value="">
+                        <div>
+                            <label for="adres">Ulica i nr domu</label>
+                            <input type="text" name="adres" value="">
+                        </div>
                     </div>
                 </section>
             </form>
