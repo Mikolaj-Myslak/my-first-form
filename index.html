@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Pizza na Piastowskim</h1>
+        </div>
+        <div id="pizzaMenu">
+            <div id="welcomeText">
+                Stwórz swoją pizzę sam!
+            </div>
+            <form id="pizzaForm" action="./clientOrders.html" method="POST">
+                <section class="menuSection">
+                    <div class="centerText">Ciasto</div>
+                    <input name="ciasto" id="ultra-cienkie" value="ultra-cienkie" type="radio" >
+                    <label for="ultra-cienkie">Ultra cienkie</label>
+                    </br>
+                    <input name="ciasto" id="cienkie" value="cienkie" type="radio" >
+                    <label for="cienkie">Cienkie</label>
+                    </br>
+                    <input name="ciasto" id="grube" value="grube" type="radio" >
+                    <label for="grube">Grube</label>
+                </section>
+                <section class="menuSection">
+                    <div class="centerText">Składniki</div>
+                    <input name="skladniki" id="salami" value="salami" type="checkbox" >
+                    <label for="salami">Salami</label>
+                    </br>
+                    <input name="skladniki" id="szynka" value="szynka" type="checkbox" >
+                    <label for="szynka">Szynka</label>
+                    </br>
+                    <input name="skladniki" id="kukurydza" value="kukurydza" type="checkbox" >
+                    <label for="kukurydza">Kukurydza</label>
+                    </br>
+                    <input name="skladniki" id="papryka" value="papryka" type="checkbox" >
+                    <label for="papryka">Papryka</label>
+                    
+                </section>
+                <section class="menuSection">
+                    <div class="centerText">
+                        <label for="adres">Adres dostawy</label>
+                        </br>
+                        <input type="text" name="adres" value="">
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

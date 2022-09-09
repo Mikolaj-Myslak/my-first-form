@@ -1,0 +1,53 @@
+body{
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dddddd;
+    
+    font-family: 'Poiret One', cursive;
+}
+
+#container{
+    height: 80vh;
+    width: 60vw;
+    margin: 20px;
+    max-width: 300px;
+    
+    background-color: #202020;
+    border: 2px white solid;  
+}
+
+#header, #pizzaMenu{
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+#header{
+    font-family: 'Titan One', cursive;
+    font-size: 14px;
+}
+
+#pizzaMenu{
+    border-top: 2px #dddddd dotted;
+    padding-top: 20px;
+    font-size: 12px
+}
+
+#welcomeText{
+    font-size:14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+#pizzaForm{
+    text-align: start;
+}
+
+.menuSection{
+    margin: 5px;
+}
+.centerText{
+    text-align: center;
+}
